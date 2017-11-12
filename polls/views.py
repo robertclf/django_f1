@@ -43,7 +43,7 @@ def detail(request, question_id):
 
 	detail
 
-	Excludes any questions that aren't published yet.
+	Shows one question and excludes any questions that aren't published yet.
 	"""
 
 	question = get_object_or_404(Question.objects.filter(pub_date__lte=timezone.now()), pk=question_id)
