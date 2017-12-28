@@ -1,0 +1,51 @@
+1513809728923	geckodriver	INFO	geckodriver 0.19.1
+1513809728926	geckodriver	INFO	Listening on 127.0.0.1:41667
+1513809730073	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.i0ujZSYVFk1P"
+1513809730794	Marionette	INFO	Enabled via --marionette
+1513809734948	Marionette	INFO	Listening on port 40079
+1513809735080	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513809735132	Marionette	DEBUG	Register listener.js for window 2147483649
+1513809735151	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513809735182	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513809735182	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513809758090	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost/django01/polls/2/"
+1513809764223	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost/django01/polls/2/"
+1513809764454	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+[Child 10248, Chrome_ChildThread] WARNING: pipe error (21): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 10248, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513810103622	geckodriver	INFO	geckodriver 0.19.1
+1513810103625	geckodriver	INFO	Listening on 127.0.0.1:58379
+1513810104738	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vYy0hmXO8voO"
+1513810105379	Marionette	INFO	Enabled via --marionette
+1513810108396	Marionette	INFO	Listening on port 38731
+1513810108452	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513810108500	Marionette	DEBUG	Register listener.js for window 2147483649
+1513810108514	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513810108535	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513810108535	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513810150459	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost/django01/polls/2/"
+1513810153215	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost/django01/polls/2/"
+1513810153472	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+[Child 10659, Chrome_ChildThread] WARNING: pipe error (35): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 10659, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 10659, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513810440880	geckodriver	INFO	geckodriver 0.19.1
+1513810440882	geckodriver	INFO	Listening on 127.0.0.1:53605
+1513810441970	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.kf4B5VZfGlBG"
+1513810442595	Marionette	INFO	Enabled via --marionette
+1513810445474	Marionette	INFO	Listening on port 33453
+1513810445490	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513810445544	Marionette	DEBUG	Register listener.js for window 2147483649
+1513810445727	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513810445753	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513810445753	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513810482191	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost/django01/polls/2/"
+1513810487242	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost/django01/polls/2/"
+1513810487480	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1513810487528	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost/django01/polls/2/"
+1513810487546	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost/django01/polls/2/"
+1513810487547	Marionette	DEBUG	Received DOM event "unload" for "http://localhost/django01/polls/2/"
+1513810487649	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost/django01/polls/2/results/"
+1513810487651	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost/django01/polls/2/results/"
+[Child 10936, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 10936, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353

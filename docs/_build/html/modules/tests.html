@@ -1,0 +1,248 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="../_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Tests &#8212; django 01 0.1.1 documentation</title>
+    <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Models" href="models.html" />
+  
+   
+
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="models.html" title="Models"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">django 01 0.1.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+        <a href="
+    ../index.html" class="text-logo">gbeka project</a>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Table Of Contents</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="views.html">Views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">Models</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tests</a></li>
+</ul>
+
+    
+  </div>
+</div>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="../search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="../index.html">Docs</a></li>
+              
+              <li>Tests</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="tests">
+<h1>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h1>
+<p>The project’s tests are:</p>
+<span class="target" id="module-polls.tests"></span><dl class="class">
+<dt id="polls.tests.QuestionDetailViewTests">
+<em class="property">class </em><code class="descclassname">polls.tests.</code><code class="descname">QuestionDetailViewTests</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionDetailViewTests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to test Detail Views.</p>
+<dl class="method">
+<dt id="polls.tests.QuestionDetailViewTests.test_future_question">
+<code class="descname">test_future_question</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionDetailViewTests.test_future_question" title="Permalink to this definition">¶</a></dt>
+<dd><p>The detail view of a question with a pub_date in the future returns
+a 404 not found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="polls.tests.QuestionDetailViewTests.test_past_question">
+<code class="descname">test_past_question</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionDetailViewTests.test_past_question" title="Permalink to this definition">¶</a></dt>
+<dd><p>The detail view of a question with a pub_Date in the past 
+displays the question’s text.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="polls.tests.QuestionIndexViewTests">
+<em class="property">class </em><code class="descclassname">polls.tests.</code><code class="descname">QuestionIndexViewTests</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionIndexViewTests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to test Index Views.</p>
+<dl class="method">
+<dt id="polls.tests.QuestionIndexViewTests.test_future_question">
+<code class="descname">test_future_question</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionIndexViewTests.test_future_question" title="Permalink to this definition">¶</a></dt>
+<dd><p>Questions with a pub_Date in the future aren’t displayed on the index page.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="polls.tests.QuestionIndexViewTests.test_future_question_and_test_past_question">
+<code class="descname">test_future_question_and_test_past_question</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionIndexViewTests.test_future_question_and_test_past_question" title="Permalink to this definition">¶</a></dt>
+<dd><p>Even if both past and future questions exist, only past questions
+are displayed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="polls.tests.QuestionIndexViewTests.test_no_questions">
+<code class="descname">test_no_questions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionIndexViewTests.test_no_questions" title="Permalink to this definition">¶</a></dt>
+<dd><p>If no question exist, an appropiate message is displayed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="polls.tests.QuestionIndexViewTests.test_past_question">
+<code class="descname">test_past_question</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionIndexViewTests.test_past_question" title="Permalink to this definition">¶</a></dt>
+<dd><p>Questions with a pub_date in the past are displayed on the index page.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="polls.tests.QuestionIndexViewTests.test_two_past_questions">
+<code class="descname">test_two_past_questions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionIndexViewTests.test_two_past_questions" title="Permalink to this definition">¶</a></dt>
+<dd><p>The questions index page may display multiple questions.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="polls.tests.QuestionModelTests">
+<em class="property">class </em><code class="descclassname">polls.tests.</code><code class="descname">QuestionModelTests</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionModelTests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to test Question Model.</p>
+<dl class="method">
+<dt id="polls.tests.QuestionModelTests.test_was_published_recently_with_future_question">
+<code class="descname">test_was_published_recently_with_future_question</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionModelTests.test_was_published_recently_with_future_question" title="Permalink to this definition">¶</a></dt>
+<dd><p>was_published_recently() returns False from questions whose pub_date
+is in the future.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="polls.tests.QuestionModelTests.test_was_published_recently_with_old_question">
+<code class="descname">test_was_published_recently_with_old_question</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionModelTests.test_was_published_recently_with_old_question" title="Permalink to this definition">¶</a></dt>
+<dd><p>was_published_recently() returns False for questions whose pub_date
+is older than 1 day.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="polls.tests.QuestionModelTests.test_was_published_recently_with_recent_question">
+<code class="descname">test_was_published_recently_with_recent_question</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.QuestionModelTests.test_was_published_recently_with_recent_question" title="Permalink to this definition">¶</a></dt>
+<dd><p>was_published_recently() returns True for questions whose pub_date
+is within the last day.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="polls.tests.create_question">
+<code class="descclassname">polls.tests.</code><code class="descname">create_question</code><span class="sig-paren">(</span><em>question_text</em>, <em>days</em><span class="sig-paren">)</span><a class="headerlink" href="#polls.tests.create_question" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a question with the given <cite>question_text</cite> and published the
+given number of <cite>days</cite> offset to now (negative for questions published
+in the past, positive for questions that have yet to be published).</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="models.html" title="previous chapter (use the left arrow)">Models</a>
+      </div>
+    
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="models.html" title="Models"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">django 01 0.1.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="../_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2017, robert. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>
