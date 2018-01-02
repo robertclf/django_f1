@@ -6,7 +6,7 @@
 Welcome to django 01's project documentation!
 =====================================
 
-Hello, this is the documentation.
+Hello, this is the project documentation.
 
 .. toctree::
    :maxdepth: 2
