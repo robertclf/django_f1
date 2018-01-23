@@ -131,3 +131,12 @@ STATIC_URL = '/static/'
 # STATIC_URL = '/home/robert/Documents/GBeka-Project/gbenv01/db01'
 
 STATIC_ROOT = "/home/robert/Documents/GBeka-Project/static/"
+#STATIC_ROOT = os.path.join(BASE_DIR, "static")
+#STATIC_ROOT = os.path.join(BASE_DIR, "../../static")
+#os.chdir(path)
+#os.chdir('..')
+
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, "static"),
+#    '/var/www/static/',
+#]
