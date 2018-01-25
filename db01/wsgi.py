@@ -23,7 +23,8 @@ import django
 #	sys.path.append(path)
 
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "db01.settings")
+#os.environ.setdefault("DJANGO_SETTINGS_MODULE", "db01.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "db01.settings.settings")
 
 # ---------------->>>>>>>>>>>>>>>
 django.setup()
