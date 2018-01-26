@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to django 01's project documentation!
+Welcome to django example 01's project documentation!
 =====================================
 
 Hello, this is the project documentation.

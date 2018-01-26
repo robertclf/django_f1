@@ -16,7 +16,6 @@ try:
 except ImportError as e:
     pass
 
-
 try:
     from settings_dev import *
 except ImportError as e:
