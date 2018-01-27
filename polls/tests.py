@@ -16,7 +16,7 @@ from .models import Question
 from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-
+from pyvirtualdisplay import Display
 
 class QuestionModelTests(TestCase):
 	"""
@@ -151,6 +151,8 @@ class VoteTestCase(LiveServerTestCase):
         Setting up Selenium tests.
         """
 
+        self.display = Display(visible=0, size=(1024, 768))
+        self.display.start()
         self.selenium = webdriver.Firefox()
         super(VoteTestCase, self).setUp()
 
@@ -160,6 +162,7 @@ class VoteTestCase(LiveServerTestCase):
         """
 
         self.selenium.quit()
+        self.display.stop()
         super(VoteTestCase, self).tearDown()
 
     def test_vote(self):
