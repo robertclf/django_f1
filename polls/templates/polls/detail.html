@@ -17,22 +17,22 @@
 
 -->
 
-{% block title %} Django Demo - Index {% endblock %}
+{% block title %} Django Demo {% endblock %}
 
 {% block content %}
 
-<h1> {{question.question_text}} </h1>
+<h5 class="text-center"> {{question.question_text}} </h5>
 
-{% if error_message %}<p><strong>{{ error_message }}</strong></p> {% endif %}
+{% if error_message %}<p><strong class="alert-danger">{{ error_message }}</strong></p> {% endif %}
 
-<form action="{% url 'polls:vote' question.id %}" method="post">
+<form action="{% url 'polls:vote' question.id %}#polls-application" method="post">
 	{% csrf_token %}
 	{% for choice in question.choice_set.all %}
-		<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
-		<label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label> <br />
+		<input class="form-check-radio" type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+		<label class="text-left text-info" for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label> <br />
 	{% endfor %}
 
-	<input type="submit" Value="Vote" id="btnSubmit" />
+	<input class="results-django form-check-radio" type="submit" Value="Vote" id="btnSubmit" />
 
 
 </form>

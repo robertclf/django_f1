@@ -94,3 +94,12 @@ def vote(request, question_id):
 
 	#return HttpResponse("You're voting on question %s." % question_id)
 
+def jenkins(request):
+	"""
+	JENKINS
+
+	Jenkins server for Django Polls Application
+	"""
+	return render(request, 'polls/jenkins.html',{})
+
+

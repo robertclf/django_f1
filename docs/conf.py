@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.abspath('..'))
 # settings.configure()
 
 import django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "db01.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "db01.settings.settings")
 django.setup()
 
 # -- General configuration ------------------------------------------------

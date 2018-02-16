@@ -1,0 +1,79 @@
+{% extends "polls/base_jenkins.html" %}
+{% load static %}
+
+{% block title %} Django Demo {% endblock %}
+
+{% block content %}
+
+<!--
+<h3 class="text-center">Jenkins</h3>
+<br>
+-->
+  <p class="jenkins text-center">
+  	Please, enter the following Username and Password to access the Jenkins Server for this demo project:
+  </p>
+  <p class="text-center">User: guest</br>Password: guest</p>
+
+  </br>
+  <h3 id="msg_redirects" class="text-center text-info">Redirecting to Jenkins Server in...</h3>
+
+  </br>
+  <div id="gj-counter-box">
+    <h3 id="gj-counter-num"></h3>
+  </div>
+
+  </br>
+
+  <p id="nothing-happens" class="text-center text-info">
+	If you are not redirected to the Jenkins Server, please click <a href="http://localhost:8080" target="_blank">here</a>.
+  </p>
+
+{% endblock %}
+
+
+{% block jsscript %}
+
+<script type="text/javascript">
+
+function gjCountAndRedirect(seconds, url) {
+
+  $('#gj-counter-num').text(seconds);
+
+  $('#gj-counter-box').show();
+
+  var interval = setInterval(function() {
+
+    seconds = seconds - 1;
+
+    $('#gj-counter-num').text(seconds);
+
+    if (seconds == 0) {
+      clearInterval(interval);      
+      //window.location = url;
+      window.open(url);
+      $('#gj-counter-box').hide();
+      $('#msg_redirects').hide();      
+      //$('#nothing-happens').show();
+    }
+
+  }, 1000);
+
+  $('#gj-counter-box').click(function() {
+    clearInterval(interval);
+    //window.location = url;
+    window.open(url);
+    $('#gj-counter-box').hide();
+    $('#msg_redirects').hide();
+    //$('#nothing-happens').show();
+  });
+}
+
+$(document).ready(function() {
+  //gjCountAndRedirect(30, document.URL);
+  gjCountAndRedirect(30, 'http://localhost:8080');
+  
+});
+
+</script>
+
+{% endblock %}
